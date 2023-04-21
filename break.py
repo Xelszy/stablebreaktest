@@ -1,6 +1,6 @@
 import subprocess
 
-repo_path = '/content/localux'
+repo_path = '/content/stablebreaktest'
 
 codetorun = """
 !git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui
@@ -30,7 +30,7 @@ codetorun = """
 
 codetorun2 = """
 !git reset --hard
-!git -C /content/localux/repositories/stable-diffusion-stability-ai reset --hard
+!git -C /content/stablebreaktest/repositories/stable-diffusion-stability-ai reset --hard
 """
 
 lines = codetorun.splitlines()
