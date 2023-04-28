@@ -28,6 +28,8 @@ codetorun = """
 !git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/stablebreaktest/extensions/multidiffusion-upscaler-for-automatic1111
 !git clone https://github.com/etherealxx/batchlinks-webui /content/stablebreaktest/extensions/batchlinks-webui
 !git clone https://github.com/nonnonstop/sd-webui-3d-open-pose-editor /content/stablebreaktest/extensions/sd-webui-3d-open-pose-editor
+!git clone https://github.com/pharmapsychotic/clip-interrogator-ext /content/stablebreaktest/extensions/clip-interrogator-ext
+!git clone https://github.com/Akegarasu/sd-webui-model-converter.git /content/stablebreaktest/extensions/sd-webui-model-converter
 """
 
 codetorun2 = """
