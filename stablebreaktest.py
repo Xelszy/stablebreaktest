@@ -71,6 +71,8 @@ codetorun = """
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_depth_sd15v2.pth -d /content/stablebreaktest/extensions/sd-webui-controlnet/models -o t2iadapter_depth_sd15v2.pth
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_sketch_sd15v2.pth -d /content/stablebreaktest/extensions/sd-webui-controlnet/models -o t2iadapter_sketch_sd15v2.pth
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_zoedepth_sd15v1.pth -d /content/stablebreaktest/extensions/sd-webui-controlnet/models -o t2iadapter_zoedepth_sd15v1.pth
+
+!aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT-RE.safetensors -d /content/stablebreaktest/models/Stable-diffusion -o Anything_V5.safetensors
 """
 
 codetorun2 = """
