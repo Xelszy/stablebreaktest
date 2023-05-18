@@ -1,5 +1,6 @@
 !pip install tqdm
 
+import os
 import urllib.request
 from tqdm import tqdm
 
@@ -44,3 +45,21 @@ for model_name in selected_models:
         urllib.request.urlretrieve(model_link, file_name, reporthook=lambda x, y, z: t.update(y))
     
     print(f"File '{file_name}' berhasil diunduh untuk model '{model_name}'.")
+
+# Path folder tujuan
+destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
+
+# Membuat folder tujuan jika belum ada
+os.makedirs(destination_folder, exist_ok=True)
+
+# Mengganti nama file tujuan sesuai dengan input pengguna
+file_name = file_names[model_name]
+
+# Menentukan path lengkap file tujuan
+destination_path = os.path.join(destination_folder, file_name)
+
+# Memindahkan file ke folder tujuan
+os.rename(file_name, destination_path)
+
+print(f"File '{file_name}' berhasil dipindahkan ke folder '{destination_folder}' untuk model '{model_name}'.")
+
