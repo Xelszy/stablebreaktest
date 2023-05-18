@@ -1,5 +1,3 @@
-!pip install tqdm
-
 import os
 import urllib.request
 from tqdm import tqdm
@@ -9,7 +7,7 @@ from tqdm import tqdm
 models = {
     'iXsAniModel_NSFW (my model)': 'https://huggingface.co/ixelszy/For-upload-folder/resolve/main/anime_model_goodfornsfw.safetensors',
     'Graupel': 'https://huggingface.co/p1atdev/graupel-v1/resolve/main/graupel-v1-nobody-fp16.safetensors',
-    'iXsRealM (my model)': 'https://huggingface.co/ixelszy/For-upload-folder/resolve/main/merge.3.safetensors',
+    'iXsRealModel (my model)': 'https://huggingface.co/ixelszy/For-upload-folder/resolve/main/merge.3.safetensors',
     'sd_1.5': 'https://huggingface.co/ckpt/sd15/resolve/main/v1-5-pruned-emaonly.ckpt',
     'BPModel': 'https://huggingface.co/ckpt/BPModel/resolve/main/bp_1024_with_vae_te.ckpt'
 }
@@ -20,19 +18,14 @@ for idx, model_name in enumerate(models.keys(), 1):
     print(f"{idx}. {model_name}")
 
 
-model_indices = input("Masukkan nomor model yang ingin dipilih (pisahkan dengan spasi): ")
+model_indices = input("Masukkan nomor model yang ingin dipilih (pisahkan dengan spasi, misal 1 3 2 4): ")
 selected_models = []
 for model_idx in model_indices.split():
     try:
         model_name = list(models.keys())[int(model_idx)-1]
         selected_models.append(model_name)
     except (ValueError, IndexError):
-        print(f"Nomor model '{model_idx}' tidak valid. Melewati model tersebut.")
-
-file_names = {}
-for model_name in selected_models:
-    file_name = input(f"Masukkan nama file tujuan untuk model '{model_name}': ")
-    file_names[model_name] = file_name    
+        print(f"Nomor model '{model_idx}' tidak valid. Melewati model tersebut.") 
 
 # Mendownload file untuk setiap model yang dipilih
 for model_name in selected_models:
@@ -48,12 +41,6 @@ for model_name in selected_models:
 
 # Path folder tujuan
 destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
-
-# Membuat folder tujuan jika belum ada
-os.makedirs(destination_folder, exist_ok=True)
-
-# Mengganti nama file tujuan sesuai dengan input pengguna
-file_name = file_names[model_name]
 
 # Menentukan path lengkap file tujuan
 destination_path = os.path.join(destination_folder, file_name)
