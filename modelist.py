@@ -9,7 +9,12 @@ models = {
     'Graupel': 'https://huggingface.co/p1atdev/graupel-v1/resolve/main/graupel-v1-nobody-fp16.safetensors',
     'iXsRealModel (my model)': 'https://huggingface.co/ixelszy/For-upload-folder/resolve/main/merge.3.safetensors',
     'sd_1.5': 'https://huggingface.co/ckpt/sd15/resolve/main/v1-5-pruned-emaonly.ckpt',
-    'BPModel': 'https://huggingface.co/ckpt/BPModel/resolve/main/bp_1024_with_vae_te.ckpt'
+    'BPModel': 'https://huggingface.co/ckpt/BPModel/resolve/main/bp_1024_with_vae_te.ckpt',
+    'henmixReal_v40': 'https://huggingface.co/ckpt/henmixreal/resolve/main/henmixReal_v40.safetensors',
+    'Anything5.0': 'https://huggingface.co/ckpt/anything-v5.0/resolve/main/AnythingV5V3_v5PrtRE.safetensors',
+    'anything-v4.0-pru': 'https://huggingface.co/ckpt/anything-v4.0/resolve/main/anything-v4.0-pruned.ckpt',
+    'anything-v4.5-pru': 'https://huggingface.co/ckpt/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors',
+    'Anything-V3.0-pru': 'https://huggingface.co/ckpt/anything-v3.0/resolve/main/Anything-V3.0-pruned.safetensors',
 }
 
 # Menampilkan daftar model yang tersedia
@@ -27,26 +32,21 @@ for model_idx in model_indices.split():
     except (ValueError, IndexError):
         print(f"Nomor model '{model_idx}' tidak valid. Melewati model tersebut.") 
 
+# Path folder tujuan
+destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
+
+# Membuat folder tujuan jika belum ada
+os.makedirs(destination_folder, exist_ok=True)
+
 # Mendownload file untuk setiap model yang dipilih
 for model_name in selected_models:
     model_link = models[model_name]
     file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
     
-    # Mendownload file 
-    print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
-    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
-        urllib.request.urlretrieve(model_link, file_name, reporthook=lambda x, y, z: t.update(y))
+# Mendownload file 
+ print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
+   with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
+   urllib.request.urlretrieve(model_link, os.path.join(destination_folder, file_name), reporthook=lambda x, y, z: t.update(y))
     
-    print(f"File '{file_name}' berhasil diunduh untuk model '{model_name}'.")
-
-# Path folder tujuan
-destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
-
-# Menentukan path lengkap file tujuan
-destination_path = os.path.join(destination_folder, file_name)
-
-# Memindahkan file ke folder tujuan
-os.rename(file_name, destination_path)
-
-print(f"File '{file_name}' berhasil dipindahkan ke folder '{destination_folder}' untuk model '{model_name}'.")
-
+print(f"File '{file_name}' berhasil diunduh untuk model '{model_name}'.")
+print(f"File-file berhasil diunduh dan dipindahkan ke folder '{destination_folder}'.")
