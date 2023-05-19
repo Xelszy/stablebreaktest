@@ -43,10 +43,15 @@ for model_name in selected_models:
     model_link = models[model_name]
     file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
     
-# Mendownload file 
- print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
-   with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
-   urllib.request.urlretrieve(model_link, os.path.join(destination_folder, file_name), reporthook=lambda x, y, z: t.update(y))
+# Mendownload file untuk setiap model yang dipilih
+for model_name in selected_models:
+    model_link = models[model_name]
+    file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
+
+    # Mendownload file 
+    print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
+    with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
+        urllib.request.urlretrieve(model_link, file_name, reporthook=lambda x, y, z: t.update(y))
     
-print(f"File '{file_name}' berhasil diunduh untuk model '{model_name}'.")
-print(f"File-file berhasil diunduh dan dipindahkan ke folder '{destination_folder}'.")
+    print(f"File '{file_name}' berhasil diunduh untuk model '{model_name}'.")
+
