@@ -15,7 +15,7 @@ models = {
     'anything-v4.5-pru': 'https://huggingface.co/ckpt/anything-v4.0/resolve/main/anything-v4.5-pruned.safetensors',
     'Anything-V3.0-pru': 'https://huggingface.co/ckpt/anything-v3.0/resolve/main/Anything-V3.0-pruned.safetensors',
     'Counterfeit-V3.0': 'https://huggingface.co/ckpt/Counterfeit-V3.0/resolve/main/Counterfeit-V3.0_fp32.safetensors',
-    'A.Orange Mix2 Hard': 'https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix2/AbyssOrangeMix2_hard.safetensors'.
+    'AOM2-Hard': 'https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix2/AbyssOrangeMix2_hard.safetensors',
 }
 
 # Menampilkan daftar model yang tersedia
