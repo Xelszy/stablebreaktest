@@ -27,7 +27,7 @@ for model_name in models.keys():
     model_checkboxes.append(checkbox)
 
 # Tombol Setujui
-approve_button = widgets.Button(description='Setujui', button_style='success', layout=widgets.Layout(width='100px'))
+approve_button = widgets.Button(description='Setuju/Skip', button_style='success', layout=widgets.Layout(width='100px'))
 
 # Menampilkan checkboxes dan tombol Setujui
 display(widgets.VBox(model_checkboxes + [approve_button]))
@@ -42,7 +42,7 @@ def approve_button_clicked(b):
             selected_models.append(checkbox.description)
     
     clear_output()
-    print("\n\033[92mModel yang disetujui:\033[0m\n", selected_models)
+    print("\n\033[92m💾Model yang disetujui:\033[0m\n", selected_models)
     download_models()
 
 # Assign callback function ke tombol Setujui
@@ -51,7 +51,7 @@ approve_button.on_click(approve_button_clicked)
 # Fungsi untuk mengunduh model
 def download_models():
     # Path folder tujuan
-    destination_folder = '/content/models'
+    destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
 
     # Membuat folder tujuan jika belum ada
     os.makedirs(destination_folder, exist_ok=True)
@@ -62,9 +62,9 @@ def download_models():
         file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
 
         # Mendownload file
-        print(f"\n\033[92mMendownload file '{file_name}' untuk model '{model_name}'...\033[0m\n")
+        print(f"\n\033[92m📥Mendownload file '{file_name}' untuk model '{model_name}'...\033[0m\n")
         with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
             urllib.request.urlretrieve(model_link, os.path.join(destination_folder, file_name), reporthook=lambda x, y, z: t.update(y))
-            print(f"\n\033[92mFile '{file_name}' berhasil diunduh untuk model '{model_name}'.\033[0m\n")
+            print(f"\n\033[92m📂File '{file_name}' berhasil diunduh untuk model '{model_name}'.\033[0m\n")
 
-    print("\n\033[92mProses pemilihan model selesai.\033[0m\n")
+    print("\n\033[92m✅Proses pemilihan model selesai.\033[0m\n")
