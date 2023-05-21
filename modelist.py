@@ -23,14 +23,17 @@ print("Model yang tersedia (Untuk sementara hanya sedikit, model bisa di downloa
 for idx, model_name in enumerate(models.keys(), 1):
     print(f"{idx}. {model_name}")
 
-model_indices = input("Masukkan nomor model yang ingin dipilih (pisahkan dengan spasi, misal 1 3 2 4): ")
 selected_models = []
-for model_idx in model_indices.split():
+while True:
+    model_idx = input("Masukkan nomor model yang ingin dipilih (tekan enter untuk selesai): ")
+    if not model_idx:
+        break
     try:
         model_name = list(models.keys())[int(model_idx)-1]
         selected_models.append(model_name)
+        print(f"Model '{model_name}' telah dipilih.")
     except (ValueError, IndexError):
-        print(f"Nomor model '{model_idx}' tidak valid. Melewati model tersebut.")
+        print(f"Nomor model '{model_idx}' tidak valid.")
 
 # Path folder tujuan
 destination_folder = '/content/stablebreaktest/models/Stable-diffusion'
@@ -43,7 +46,7 @@ for model_name in selected_models:
     model_link = models[model_name]
     file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
 
-        # Mendownload file 
+    # Mendownload file 
     print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
     with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
         urllib.request.urlretrieve(model_link, file_name, reporthook=lambda x, y, z: t.update(y))
@@ -56,4 +59,6 @@ for model_name in selected_models:
     # Memindahkan file ke folder tujuan
     os.rename(file_name, destination_path)
 
-    print(f"File '{file_name}' berhasil dipindahkan ke folder '{destination_folder}' untuk model '{model_name}'.")
+    print(f"File '{file_name}' 📂berhasil dipindahkan ke folder '{destination_folder}' untuk model '{model_name}'.")
+
+print("✅Proses unduhan dan pemindahan file selesai.")
