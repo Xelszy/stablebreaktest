@@ -1,6 +1,5 @@
 import os
 import urllib.request
-from alive_progress import alive_bar
 from tqdm import tqdm
 from IPython.display import display, clear_output
 import ipywidgets as widgets
@@ -43,7 +42,7 @@ def approve_button_clicked(b):
             selected_models.append(checkbox.description)
     
     clear_output()
-    print(💾Model yang disetujui:", selected_models)
+    print("\n\033[92mModel yang disetujui:\033[0m\n", selected_models)
     download_models()
 
 # Assign callback function ke tombol Setujui
@@ -63,10 +62,9 @@ def download_models():
         file_name = model_link.split('/')[-1]  # Mendapatkan nama file dari tautan
 
         # Mendownload file
-        print(f"Mendownload file '{file_name}' untuk model '{model_name}'...")
+        print(f"\n\033[92mMendownload file '{file_name}' untuk model '{model_name}'...\033[0m\n")
         with tqdm(unit='B', unit_scale=True, unit_divisor=1024, miniters=1, ncols=80) as t:
             urllib.request.urlretrieve(model_link, os.path.join(destination_folder, file_name), reporthook=lambda x, y, z: t.update(y))
+            print(f"\n\033[92mFile '{file_name}' berhasil diunduh untuk model '{model_name}'.\033[0m\n")
 
-        print(f"File '{file_name}' 📂 berhasil diunduh untuk model '{model_name}'.")
-
-    print("✅Proses pemilihan model selesai.")
+    print("\n\033[92mProses pemilihan model selesai.\033[0m\n")
