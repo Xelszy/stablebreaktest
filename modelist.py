@@ -44,6 +44,6 @@ for model_name in selected_models:
         urllib.request.urlretrieve(model_link, file_name, reporthook=lambda x, y, z: t.update(y))     
 
  # Memindahkan file ke folder tujuan
-    os.rename(file_name, destination_path)
+    os.rename(file_name, destination_folder)
 
     print(f"File '{file_name}' berhasil dipindahkan ke folder '{destination_folder}' untuk model '{model_name}'.")                     
