@@ -4,7 +4,7 @@ repo_path = '/content/stablebreaktest'
 
 codetorun = """
 !git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
-!git clone https://github.com/kohya-ss/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
+!git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
 !git checkout e9f3d62
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
 !git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /content/stablebreaktest/extensions/stable-diffusion-webui-two-shot
