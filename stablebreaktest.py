@@ -10,6 +10,7 @@ codetorun = """
 !git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /content/stablebreaktest/extensions/stable-diffusion-webui-two-shot
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth -d /content/stablebreaktest/models/ESRGAN -o 4x-UltraSharp.pth
 !wget https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py -O /content/stablebreaktest/scripts/run_n_times.py
+!git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/stablebreaktest/extensions/ultimate-upscale-for-automatic1111
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
 !git clone https://github.com/hnmr293/sd-webui-llul /content/stablebreaktest/extensions/sd-webui-llul
 !git clone https://github.com/takoyaro/db-storage1111 /content/stablebreaktest/extensions/db-storage1111
