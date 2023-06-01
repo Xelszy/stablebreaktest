@@ -18,7 +18,6 @@ codetorun = """
 !git clone https://github.com/takoyaro/db-storage1111 /content/stablebreaktest/extensions/db-storage1111
 !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit /content/stablebreaktest/extensions/stable-diffusion-webui-model-toolkit
 !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/stablebreaktest/extensions/a1111-sd-webui-lycoris
-
 !git clone https://github.com/camenduru/sd-civitai-browser /content/stablebreaktest/extensions/sd-civitai-browser
 !git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
