@@ -3,7 +3,7 @@ import subprocess
 repo_path = '/content/stablebreaktest'
 
 codetorun = """
-!git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
+!git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
 !git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
@@ -76,6 +76,7 @@ codetorun = """
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_sketch_sd15v2.pth -d /content/stablebreaktest/extensions/sd-webui-controlnet/models -o t2iadapter_sketch_sd15v2.pth
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/ckpt/ControlNet-v1-1/resolve/main/t2iadapter_zoedepth_sd15v1.pth -d /content/stablebreaktest/extensions/sd-webui-controlnet/models -o t2iadapter_zoedepth_sd15v1.pth
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT-RE.safetensors -d /content/stablebreaktest/models/Stable-diffusion -o Anything_V5.safetensors
+%cd /content/stablebreaktest
 """
 
 codetorun2 = """
