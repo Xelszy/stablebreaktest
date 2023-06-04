@@ -3,7 +3,7 @@ import subprocess
 repo_path = '/content/stablebreaktest'
 
 codetorun = """
-!git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
+!git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
 !git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
@@ -13,8 +13,9 @@ codetorun = """
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
 !git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/stablebreaktest/extensions/ultimate-upscale-for-automatic1111
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
+!git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
+!git clone https://github.com/tjm35/asymmetric-tiling-sd-webui /content/stablebreaktest/extensions/asymmetric-tiling-sd-webui
 !git clone https://github.com/hnmr293/sd-webui-llul /content/stablebreaktest/extensions/sd-webui-llul
-!git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing 
 !git clone https://github.com/takoyaro/db-storage1111 /content/stablebreaktest/extensions/db-storage1111
 !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit /content/stablebreaktest/extensions/stable-diffusion-webui-model-toolkit
 !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/stablebreaktest/extensions/a1111-sd-webui-lycoris
