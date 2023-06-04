@@ -30,7 +30,6 @@ codetorun = """
 !git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 !git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
-!git clone https://github.com/NoCrypt/sd-fast-pnginfo /content/stablebreaktest/extensions/sd-fast-pnginfo
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
 !git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
