@@ -13,9 +13,14 @@ codetorun = """
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth -d /content/stablebreaktest/models/ESRGAN -o 4x-UltraSharp.pth
 !wget https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py -O /content/stablebreaktest/scripts/run_n_times.py
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
+!git clone https://github.com/catppuccin/stable-diffusion-webui /content/stablebreaktest/extensions/stable-diffusion-webui
+!git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stablebreaktest/extensions/sd-webui-agent-scheduler
 !git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/stablebreaktest/extensions/ultimate-upscale-for-automatic1111
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
+!git clone https://github.com/Physton/sd-webui-prompt-all-in-one /content/stablebreaktest/extensions/sd-webui-prompt-all-in-one
+!git clone https://github.com/ashen-sensored/sd_webui_SAG /content/stablebreaktest/extensions/sd_webui_SAG
+!git clone https://github.com/ashen-sensored/sd-dynamic-thresholding-rcfg /content/stablebreaktest/extensions/sd_webui_SAG
 !git clone https://github.com/tjm35/asymmetric-tiling-sd-webui /content/stablebreaktest/extensions/asymmetric-tiling-sd-webui
 !git clone https://github.com/hnmr293/sd-webui-llul /content/stablebreaktest/extensions/sd-webui-llul
 !git clone https://github.com/takoyaro/db-storage1111 /content/stablebreaktest/extensions/db-storage1111
@@ -25,11 +30,12 @@ codetorun = """
 !git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 !git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
+!git clone https://github.com/NoCrypt/sd-fast-pnginfo /content/stablebreaktest/extensions/sd-fast-pnginfo
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
 !git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
 !git clone https://github.com/camenduru/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
-!git clone https://github.com/yfszzx/stable-diffusion-webui-images-browser /content/stablebreaktest/extensions/stable-diffusion-webui-images-browser 
+!git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
 !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
 !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
 !git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/stablebreaktest/extensions/multidiffusion-upscaler-for-automatic1111
