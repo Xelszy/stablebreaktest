@@ -5,7 +5,7 @@ repo_path = '/content/stablebreaktest'
 codetorun = """
 !git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/stablebreaktest
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
-!git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
+!git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebcivirreaktest/extensions/sd-webui-additional-networks
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
@@ -19,6 +19,7 @@ codetorun = """
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
 !git clone https://github.com/Physton/sd-webui-prompt-all-in-one /content/stablebreaktest/extensions/sd-webui-prompt-all-in-one
+!git clone https://github.com/butaixianran/Stable-Diffusion-Webui-Civitai-Helper /content/stablebreaktest/extensions/Stable-Diffusion-Webui-Civitai-Helper
 !git clone https://github.com/ashen-sensored/sd_webui_SAG /content/stablebreaktest/extensions/sd_webui_SAG
 !git clone https://github.com/ashen-sensored/sd-dynamic-thresholding-rcfg /content/stablebreaktest/extensions/sd_webui_SAG
 !git clone https://github.com/tjm35/asymmetric-tiling-sd-webui /content/stablebreaktest/extensions/asymmetric-tiling-sd-webui
@@ -26,7 +27,7 @@ codetorun = """
 !git clone https://github.com/takoyaro/db-storage1111 /content/stablebreaktest/extensions/db-storage1111
 !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit /content/stablebreaktest/extensions/stable-diffusion-webui-model-toolkit
 !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/stablebreaktest/extensions/a1111-sd-webui-lycoris
-!git clone https://github.com/camenduru/sd-civitai-browser /content/stablebreaktest/extensions/sd-civitai-browser
+!git clone https://github.com/SignalFlagZ/sd-civitai-browser /content/stablebreaktest/extensions/sd-civitai-browser
 !git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 !git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
