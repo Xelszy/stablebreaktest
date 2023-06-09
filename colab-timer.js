@@ -88,7 +88,7 @@ onUiLoaded(function () {
   let div2 = document.createElement("div");
   div2.className = "flex gap-2 items-center border-solid border gr-box";
   div2.style =
-    "cursor: pointer; padding-block: 3px; width: fit-content; padding-inline: 5px; border-color: hsl(300, 65%, 61%); z-index: 999; background-color: transparent !important;";
+    "cursor: pointer; padding-block: 3px; width: fit-content; padding-inline: 5px; border-color: hsl(300, 65%, 61%); z-index: 999; background-color: transparent !important; display: flex; align-items: center;"; // Tambahkan display: flex dan align-items: center
   div2.title = "Timer by NoCrypt. Click to refresh.";
 
   let img = document.createElement("img");
@@ -96,6 +96,7 @@ onUiLoaded(function () {
     "https://ssl.gstatic.com/colaboratory-static/common/de56aa663d279b80074b6c21f69dc872/img/favicon.ico";
   img.width = 24;
   img.style.filter = "hue-rotate(270deg)";
+  img.style.marginRight = "5px"; // Tambahkan margin-right
 
   let timerEl = document.createElement("div");
   timerEl.style = "font-family: monospace;color: hsl(300, 65%, 61%);";
