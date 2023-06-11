@@ -14,7 +14,9 @@ codetorun = """
 !wget https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py -O /content/stablebreaktest/scripts/run_n_times.py
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
 !git clone https://github.com/catppuccin/stable-diffusion-webui /content/stablebreaktest/extensions/stable-diffusion-webui
+!git clone https://github.com/a2569875/stable-diffusion-webui-composable-lora /content/stablebreaktest/extensions/stable-diffusion-webui-composable-lora
 !git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stablebreaktest/extensions/sd-webui-agent-scheduler
+!git clone https://github.com/hako-mikan/sd-webui-regional-prompter /content/stablebreaktest/extensions/sd-webui-regional-prompter
 !git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/stablebreaktest/extensions/ultimate-upscale-for-automatic1111
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
