@@ -16,5 +16,5 @@ setup(
         'mega.py==1.0.8',
         'pydantic==1.10.8'
     ],
-    url='https://github.com/Linaqruf/colablib',
+    url='https://github.com/Xelszy/stablebreaktest',
 )
