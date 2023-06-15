@@ -3,7 +3,8 @@ import subprocess
 repo_path = '/content/stablebreaktest'
 
 codetorun = """
-!git clone -b v2.2 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
+!git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/stablebreaktest
+!git reset --hard
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
 !git clone https://github.com/Xelszy/sd-webui-additional-networks /content/stablebreaktest/extensions/sd-webui-additional-networks
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
@@ -15,7 +16,7 @@ codetorun = """
 !git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
 !git clone https://github.com/catppuccin/stable-diffusion-webui /content/stablebreaktest/extensions/stable-diffusion-webui
 !git clone https://github.com/a2569875/stable-diffusion-webui-composable-lora /content/stablebreaktest/extensions/stable-diffusion-webui-composable-lora
-#git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stablebreaktest/extensions/sd-webui-agent-scheduler
+git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stablebreaktest/extensions/sd-webui-agent-scheduler
 !git clone https://github.com/hako-mikan/sd-webui-regional-prompter /content/stablebreaktest/extensions/sd-webui-regional-prompter
 !git clone https://github.com/Coyote-A/ultimate-upscale-for-automatic1111 /content/stablebreaktest/extensions/ultimate-upscale-for-automatic1111
 !git clone https://github.com/hako-mikan/sd-webui-supermerger /content/stablebreaktest/extensions/sd-webui-supermerger
