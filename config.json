@@ -269,7 +269,7 @@
     "regprp_debug": false,
     "regprp_hidepmask": false,
     "ctp_flavor": "mocha", 
-    "accent_color": "lavender", 
+    "accent_color": "sapphire", 
     "model_toolkit_fix_clip": false,
     "model_toolkit_autoprune": false,
     "tac_tagFile": "danbooru.csv",
