@@ -35,7 +35,7 @@ git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stabl
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 !git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
-!git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
+#git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
 !git clone https://github.com/camenduru/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
 !git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
