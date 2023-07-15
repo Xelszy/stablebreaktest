@@ -1,6 +1,7 @@
 import os
 import time
 import requests
+import threading
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from PIL import Image
@@ -65,5 +66,13 @@ def start_image_watcher():
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
-
 start_image_watcher()
+
+def main():
+    watcher_thread = threading.Thread(target=start_image_watcher)
+    watcher_thread.start()
+    while True:
+        print("Running another script...")
+        time.sleep(1)
+if __name__ == "__main__":
+    main()
