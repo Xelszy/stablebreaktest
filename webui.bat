@@ -50,7 +50,7 @@ set ACCELERATE="%VENV_DIR%\Scripts\accelerate.exe"
 if EXIST %ACCELERATE% goto :accelerate_launch
 
 :launch
-echo Running webhook.py
+echo outputs_webhook.py
 start "" %PYTHON% outputs_webhook.py
 
 echo Running launch.py 
