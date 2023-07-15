@@ -1,0 +1,4 @@
+watchdog
+Pillow
+tabulate
+requests
