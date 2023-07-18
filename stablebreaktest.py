@@ -7,14 +7,14 @@ codetorun = """
 %cd /content/stablebreaktest
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
-#!git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
-#!git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
-#!git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
-#!git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /content/stablebreaktest/extensions/stable-diffusion-webui-two-shot
+!git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
+!git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
+!git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
+!git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /content/stablebreaktest/extensions/stable-diffusion-webui-two-shot
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth -d /content/stablebreaktest/models/ESRGAN -o 4x-UltraSharp.pth
 !wget https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py -O /content/stablebreaktest/scripts/run_n_times.py
 #!git clone https://github.com/thomasasfk/sd-webui-aspect-ratio-helper /content/stablebreaktest/extensions/sd-webui-aspect-ratio-helper
-#!git clone https://github.com/catppuccin/stable-diffusion-webui /content/stablebreaktest/extensions/stable-diffusion-webui
+!git clone https://github.com/catppuccin/stable-diffusion-webui /content/stablebreaktest/extensions/stable-diffusion-webui
 #!git clone https://github.com/a2569875/stable-diffusion-webui-composable-lora /content/stablebreaktest/extensions/stable-diffusion-webui-composable-lora
 #git clone https://github.com/ArtVentureX/sd-webui-agent-scheduler /content/stablebreaktest/extensions/sd-webui-agent-scheduler
 #!git clone https://github.com/hako-mikan/sd-webui-regional-prompter /content/stablebreaktest/extensions/sd-webui-regional-prompter
