@@ -37,15 +37,15 @@ codetorun = """
 #!git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
 #git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 #!git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
-#!git clone https://github.com/camenduru/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
-#!git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
-#!git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
-#!git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
-#!git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/stablebreaktest/extensions/multidiffusion-upscaler-for-automatic1111
-#!git clone https://github.com/etherealxx/batchlinks-webui /content/stablebreaktest/extensions/batchlinks-webui
-#!git clone https://github.com/nonnonstop/sd-webui-3d-open-pose-editor /content/stablebreaktest/extensions/sd-webui-3d-open-pose-editor
-#!git clone https://github.com/pharmapsychotic/clip-interrogator-ext /content/stablebreaktest/extensions/clip-interrogator-ext
-#!git clone https://github.com/Akegarasu/sd-webui-model-converter.git /content/stablebreaktest/extensions/sd-webui-model-converter
+!git clone https://github.com/camenduru/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
+!git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
+!git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
+!git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
+!git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/stablebreaktest/extensions/multidiffusion-upscaler-for-automatic1111
+!git clone https://github.com/etherealxx/batchlinks-webui /content/stablebreaktest/extensions/batchlinks-webui
+!git clone https://github.com/nonnonstop/sd-webui-3d-open-pose-editor /content/stablebreaktest/extensions/sd-webui-3d-open-pose-editor
+!git clone https://github.com/pharmapsychotic/clip-interrogator-ext /content/stablebreaktest/extensions/clip-interrogator-ext
+!git clone https://github.com/Akegarasu/sd-webui-model-converter.git /content/stablebreaktest/extensions/sd-webui-model-converter
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT-RE.safetensors -d /content/stablebreaktest/models/Stable-diffusion -o Anything_V5.safetensors
 %cd /content/stablebreaktest
 
