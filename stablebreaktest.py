@@ -10,6 +10,7 @@ codetorun = """
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
+!git clone https://github.com/P2Enjoy/sd-webui-roop-uncensored /content/stablebreaktest/extensions/sd-webui-roop-uncensored
 !git clone https://github.com/ashen-sensored/stable-diffusion-webui-two-shot /content/stablebreaktest/extensions/stable-diffusion-webui-two-shot
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/embed/upscale/resolve/main/4x-UltraSharp.pth -d /content/stablebreaktest/models/ESRGAN -o 4x-UltraSharp.pth
 !wget https://raw.githubusercontent.com/camenduru/stable-diffusion-webui-scripts/main/run_n_times.py -O /content/stablebreaktest/scripts/run_n_times.py
