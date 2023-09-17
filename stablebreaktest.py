@@ -38,7 +38,7 @@ codetorun = """
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
 !git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
-!git clone https://github.com/camenduru/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
+!git clone https://github.com/Bing-su/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
 !git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
 !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
 !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
