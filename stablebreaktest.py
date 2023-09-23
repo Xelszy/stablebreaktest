@@ -4,7 +4,7 @@ repo_path = '/content/stablebreaktest'
 
 codetorun = """
 !git clone https://github.com/Xelszy/a1111webui.git /content/stablebreaktest
-%cd /content/stablebreaktest
+!cd /content/stablebreaktest
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
@@ -51,7 +51,7 @@ codetorun = """
 %cd /content/stablebreaktest
 
 !aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/swl-models/Anything-v5.0-PRT/resolve/main/Anything-v5.0-PRT-RE.safetensors -d /content/stablebreaktest/models/Stable-diffusion -o Anything_V5.safetensors
-%cd /content/stablebreaktest
+!cd /content/stablebreaktest
 """
 
 codetorun2 = """
