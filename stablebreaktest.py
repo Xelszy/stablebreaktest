@@ -7,7 +7,7 @@ codetorun = """
 !cd /content/stablebreaktest
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
-!git clone https://github.com/camenduru/tunnels /content/stable-diffusion-webui/extensions/tunnels
+!git clone https://github.com/camenduru/tunnels /content/stablebreaktest/extensions/extensions/tunnels
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
