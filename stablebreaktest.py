@@ -3,7 +3,7 @@ import subprocess
 repo_path = '/content/stablebreaktest'
 
 codetorun = """
-!git clone https://github.com/Xelszy/a1111webui /content/stablebreaktest
+!git clone -b v1.8.0 https://github.com/AUTOMATIC1111/stable-diffusion-webui /content/breaktherules
 !cd /content/stablebreaktest
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
