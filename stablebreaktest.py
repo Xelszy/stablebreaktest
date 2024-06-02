@@ -32,7 +32,7 @@ codetorun = """
 !git clone https://github.com/arenatemp/stable-diffusion-webui-model-toolkit /content/stablebreaktest/extensions/stable-diffusion-webui-model-toolkit
 !git clone https://github.com/KohakuBlueleaf/a1111-sd-webui-lycoris /content/stablebreaktest/extensions/a1111-sd-webui-lycoris
 !git clone https://github.com/SignalFlagZ/sd-civitai-browser /content/stablebreaktest/extensions/sd-civitai-browser
-!git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
+#git clone https://github.com/Mikubill/sd-webui-controlnet /content/stablebreaktest/extensions/sd-webui-controlnet
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 #!git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
