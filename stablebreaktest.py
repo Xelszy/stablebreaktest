@@ -7,6 +7,7 @@ codetorun = """
 !cd /content/stablebreaktest
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
+!git clone https://github.com/camenduru/tunnels /content/stable-diffusion-webui/extensions/tunnels
 !git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
@@ -38,7 +39,7 @@ codetorun = """
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
 !git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
-!git clone https://github.com/Bing-su/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
+#git clone https://github.com/Bing-su/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
 !git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
 !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
 !git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
