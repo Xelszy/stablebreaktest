@@ -37,12 +37,12 @@ codetorun = """
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 #!git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
-!git clone https://github.com/Klokinator/Umi-AI /content/stablebreaktest/extensions/Umi-AI
+!git clone https://github.com/Klokinator/Umi-AI-Embeds /content/stablebreaktest/extensions/Umi-AI-Embeds
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
 #git clone https://github.com/Bing-su/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
 !git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
 !git clone https://github.com/bbc-mc/sdweb-merge-block-weighted-gui /content/stablebreaktest/extensions/sdweb-merge-block-weighted-gui
-!git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
+#git clone https://github.com/camenduru/stable-diffusion-webui-huggingface /content/stablebreaktest/extensions/stable-diffusion-webui-huggingface
 !git clone https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111 /content/stablebreaktest/extensions/multidiffusion-upscaler-for-automatic1111
 !git clone https://github.com/etherealxx/batchlinks-webui /content/stablebreaktest/extensions/batchlinks-webui
 !git clone https://github.com/nonnonstop/sd-webui-3d-open-pose-editor /content/stablebreaktest/extensions/sd-webui-3d-open-pose-editor
