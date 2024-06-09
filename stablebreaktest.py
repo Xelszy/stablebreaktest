@@ -8,7 +8,7 @@ codetorun = """
 #git switch sdxl
 #git clone -b v2.1 https://github.com/camenduru/stable-diffusion-webui /content/stablebreaktest
 !git clone https://github.com/camenduru/tunnels /content/stablebreaktest/extensions/tunnels
-!git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreaktest/extensions/sd-web-ui-quickcss
+!git clone https://github.com/Gerschel/sd-web-ui-quickcss /content/stablebreakumitest/extensions/sd-web-ui-quickcss
 !git clone https://github.com/vladmandic/sd-extension-system-info /content/stablebreaktest/extensions/sd-extension-system-info
 !git clone https://github.com/DominikDoom/a1111-sd-webui-tagcomplete.git /content/stablebreaktest/extensions/tag-autocomplete
 #git clone https://github.com/P2Enjoy/sd-webui-roop-uncensored /content/stablebreaktest/extensions/sd-webui-roop-uncensored
@@ -37,7 +37,7 @@ codetorun = """
 !git clone https://github.com/camenduru/openpose-editor /content/stablebreaktest/extensions/openpose-editor
 #!git clone https://github.com/jexom/sd-webui-depth-lib /content/stablebreaktest/extensions/sd-webui-depth-lib
 !git clone https://github.com/hnmr293/posex /content/stablebreaktest/extensions/posex
-!git clone https://github.com/Klokinator/Umi-AI-Embeds /content/stablebreaktest/extensions/Umi-AI-Embeds
+#git clone https://github.com/Klokinator/Umi-AI-Embeds /content/stablebreaktest/extensions/Umi-AI-Embeds
 !git clone https://github.com/hnmr293/sd-webui-cutoff /content/stablebreaktest/extensions/sd-webui-cutoff
 #git clone https://github.com/Bing-su/sd-webui-tunnels /content/stablebreaktest/extensions/sd-webui-tunnels
 !git clone https://github.com/zanllp/sd-webui-infinite-image-browsing /content/stablebreaktest/extensions/sd-webui-infinite-image-browsing
